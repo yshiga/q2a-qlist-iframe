@@ -6,12 +6,14 @@ class qa_html_theme_layer extends qa_html_theme_base
 
 	public function body()
 	{
-		unset($this->content['navigation']);
-		unset($this->content['sidebar']);
-		unset($this->content['sidepanel']);
-		unset($this->content['widgets']);
-		unset($this->content['logo']);
-		unset($this->content['search']);
+		if ($this->template === 'iframe') {
+			unset($this->content['navigation']);
+			unset($this->content['sidebar']);
+			unset($this->content['sidepanel']);
+			unset($this->content['widgets']);
+			unset($this->content['logo']);
+			unset($this->content['search']);
+		}
 		qa_html_theme_base::body();
 	}
 
