@@ -19,4 +19,6 @@ if (!defined('QA_VERSION')) { // don't allow this page to be requested directly 
 }
 
 // page
-qa_register_plugin_module('page', 'qa-test-page.php', 'qa_test_page', 'Test Page');
+qa_register_plugin_module('page', 'qa-qlist-iframe-page.php', 'qa_qlist_iframe_page', 'QList iframe Page');
+// layer
+qa_register_plugin_layer('qa-qlist-iframe-layer.php','QList iframe Layer');
