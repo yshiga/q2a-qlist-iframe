@@ -1,4 +1,4 @@
 # qlist iframe Plugin
 
 ## Description
-Question list for iframet tag.
+Question list for iframe tag.
